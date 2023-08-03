@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='UTF-8'>
+        <meta name='description' content='This is my first html page'>
+        <style>
+            :root{--v1: purple;
+                  --v2: yellow;
+            }
+            h1{color: dodgerblue;font-family: Cambria;border-color: slateblue;border-width: 5px;border-style: dotted;border-radius: 10px;padding: 10px;text-align: center;margin: 20px;}
+            h3{color: firebrick;font-size: 50px;margin: 20px;}
+            .red-txt{color: red;}
+            .largerimg{width: 500px;}
+            .smallerimg{width: 100px;}
+            .font1{font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;}
+            .yellow-bg{background-color: yellowgreen;}
+            #id1{color: darkcyan;}
+            body{background-color: silver !important;}
+            [type="button"]{margin: 10px;}
+            .cls1{--color1: blue;}
+            .cls2{color: var(--color1,black);}
+        </style>
+        <title>
+            Page Title
+        </title>
+    </head>
+    <body>
+        <h1> HTML Page</h1> 
+        <div class="yellow-bg">
+            <h3 id="id1">Hello There</h3>
+            <p style="color: blue;">sadfsf</p>
+            <p class="red-txt font1">rgsiugfuivbifubv</p>
+            <input type="radio">Choose this</input>
+            <p class="cls1 cls2">paragraph</p>
+        </div>
+    </body>
+</html>
+<!--Classes can be used to style multiple html elements-->
+<!--For importing google fonts paste the link of that font with the help of <link href="link"> and directly use the familt name in the style block-->
+<!--A list can be passed in the font family block as backup fonts if the main font isn't available-->
+<!--Multiple classes can be used inside one tag just with some spacing in between the 2 classes-->
+<!--Circular Images can be created using the border-radius with value in % (around 50-60)-->
+<!--Classes are applicable to multiple elements but ids aren't and css prioritizes id nore than classes-->
+<!--Margin can also take negative values-->
+<!--Separate Padding can also be added to top,bottom,left and right. Same is in the case of margins-->
+<!--Clock wise notation is easier representation of specifying the padding in top-left-bottom-right directions in given order. Same can be done for the margins-->
+<!--Styling of various attributes can also be done by following the above syntax-->
+<!--Relative measurements are also used in styling (m and em values)-->
+<!--Any changes done to the outer elements is inherited by the inner elements-->
+<!--Prioritizing can be done by specifying class which ignores inheritances of the outer tags-->
+<!--Order of defining classes matters during overriding classes(Latest one gets prioritized more) specified in a tag(order of specification doesn't matter)-->
+<!--Preference order(in-line style > id > class)-->
+<!--!important highers the preference of a class or id which even overrides in-line styling-->
+<!--Hex codes(#123456) can also be used for specific colors. They can even be abreviated(shortened). RGB vales can also be used[rgb(1,2,3)]-->
+<!--Media Query is used to change variables within a certain area (@media :root{})-->
+

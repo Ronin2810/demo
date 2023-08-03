@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='UTF-8'>
+        <meta name='description' content='This is my first html page'>
+        <style>
+            .d1{background: blueviolet;}
+            .d2{background: cadetblue;}
+            .d3{background: chartreuse;}
+            .d4{background: crimson;}
+            .d5{background: darkmagenta;}
+            .container{font-size: 40px;
+                       width: 100%;
+                       background: cornsilk;
+                       display: grid;
+                       grid-template-columns: 100px 100px 100px;
+                       grid-template-rows: 50px 50px;
+                       grid-column-gap: 20px;
+                       grid-row-gap: 20px;
+                       grid-template-areas: 
+                       "header header header"
+                       "advert content content"
+                       "footer footer footer";
+                       }
+            .itemd5{grid-column: 2/4;
+                    grid-row: 2/4;
+                    justify-self: center;
+                    align-self: end;
+                    grid-area: header;}
+            .item2{grid-area: advert;}           
+            .flbx{display: flex;}
+            .flbxcl1{background:darksalmon;}
+            .flbxcl2{background: deepskyblue;}
+        </style>
+        <title>
+            Page Title
+        </title>
+    </head>
+    <body>
+        Sample HTML Page
+        <div class="container">
+            <div class="d1">1</div>
+            <div class="d2 item2">2</div>
+            <div class="d3">3</div>
+            <div class="d4">4</div>
+            <div class="d5 itemd5">5</div>
+            <div class="flbx flbxcl1">6</div>
+            <div class="flbx flbxcl2">7</div>
+
+        </div> 
+    </body>
+</html>
+<!--Grid template columns and rows can also take up other units like fr,auto,% etc.-->
+<!--grid-gap is a one liner for grid-column-gap and grid-row-gap-->
+<!--justify-items and align-items positions all items(horizontally and vertically respectively) in the given page as the arguements passed-->
+<!--Grid areas without templates can be used by passing 4 coordinates (1/2/3/4) where the  first two and last two are the start and end coordinates respectively-->
+<!--auto-fit and auto-fill work differently-->
+<!--media query can be used to change the area templates according to our needs-->
+<!--Flexbox is used for flexible grids/windows(It makes the page look more presentable according to the window size)-->
+<!--flex-direction property handles the alignment of the flexboxes(row is the default setting for flex-direction)-->
+<!--Other properties: flex-wrap,flex-shrink,flex-grow,flex-basis(does same work as shrink and grow),order-->
+
+
+
+
+
